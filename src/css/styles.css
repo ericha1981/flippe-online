@@ -1,0 +1,26 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit; }
+
+html {
+  font-size: 62.5%;
+  /* Given default font size 16px, 10pt is 62.5%. This defines what 1rem is...hence base.scss */ }
+
+body {
+  font-family: "Raleway";
+  font-weight: 400;
+  box-sizing: border-box; }
+
+h1 {
+  font-weight: 800;
+  font-size: 4rem; }
+
+.card-item {
+  height: auto;
+  background-color: #8deecd; }
+
+.card-area-main {
+  cursor: pointer; }
