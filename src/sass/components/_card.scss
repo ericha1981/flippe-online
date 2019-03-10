@@ -46,11 +46,11 @@
     }
   }
 
-  &:hover &__side--front {
+  &:hover &:focus &:active &__side--front {
     transform: rotateY(180deg);
   }
 
-  &:hover &__side--back {
+  &:hover &:focus &:active &__side--back {
     transform: rotateY(0);
   }
 }
