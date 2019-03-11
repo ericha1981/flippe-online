@@ -1,8 +1,8 @@
 .card {
-  perspective: 150rem;
-  -moz-perspective: 150rem;
+  perspective: 1500rem;
+  -moz-perspective: 1500rem;
   position: relative;
-  height: 55rem;
+  height: 68vh;
 
   background-color: #272b30;
   border: 0;
@@ -12,7 +12,8 @@
     font-size: 2.5rem;
     border: 1.3rem solid #0c0d0e;
 
-    height: 55rem;
+    height: 85rem;
+    max-height: 68vh;
     transition: all 0.8s ease;
     position: absolute;
     top: 0;
@@ -24,7 +25,7 @@
 
     &--front {
       background-color: #c0a345; // rgb(250, 202, 100);
-      background-image: url("./img/questionmark_svg.png");
+      background-image: url("./img/question_mark_svg.png");
       background-repeat: no-repeat;
       background-position: center;
 
@@ -34,27 +35,26 @@
     &--back {
       transform: rotateY(180deg);
 
-      padding: 1.5rem;
+      padding: 2rem;
       border-radius: 10px;
       background-color: #58493b;
 
-      // background-image: linear-gradient(
-      //   to right,
-      //   $color-secondary-light,
-      //   $color-secondary-dark
-      // );
+      & .row {
+        // background-color: rgb(40, 122, 122);
+        height: 60vh;
+      }
     }
   }
 
-  &:hover &:focus &:active &__side--front {
+  &:active &__side--front,
+  &:focus &__side--front,
+  &:hover &__side--front {
     transform: rotateY(180deg);
   }
 
-  &:hover &:focus &:active &__side--back {
+  &:active &__side--back,
+  &:focus &__side--back,
+  &:hover &__side--back {
     transform: rotateY(0);
   }
-}
-
-.col-md-4 {
-  margin-bottom: 1.5rem;
 }

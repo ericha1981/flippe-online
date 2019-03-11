@@ -31,11 +31,11 @@ class FlippeCard extends Component {
     const qTxt = questions[rndNum];
 
     return (
-      <div className="col-md-6" onMouseEnter={this.cardMouseEnterHandler}>
-        <div className="card">
-          <div className="card__side card__side--front" />
-          <div className="card__side card__side--back row align-items-center text-center">
-            <div>{qTxt}</div>
+      <div className="card" onMouseEnter={this.cardMouseEnterHandler}>
+        <div className="card__side card__side--front" />
+        <div className="card__side card__side--back">
+          <div className="row card__text align-items-center">
+            <div className="col text-center">{qTxt}</div>
           </div>
         </div>
       </div>

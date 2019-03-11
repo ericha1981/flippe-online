@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import Home from "./components/Home";
+import FlippeCard from "./components/FlippeCard";
 
 import "./index.css";
 
@@ -7,17 +7,27 @@ class App extends Component {
   render() {
     return (
       <>
-        <div className="container-fluid">
-          <header className="jumbotron text-center">
-            <h1>Flippe</h1>
-            <p>
-              Get different jokes each time you hover your mouse over the card.
-            </p>
-          </header>
+        <div className="header">
+          <div className="container">
+            <div className="row">
+              <div className="col align-self-center text-center">
+                <h1>Flippe</h1>
+                <p>
+                  Get different jokes each time you hover your mouse over the
+                  card.
+                </p>
+              </div>
+            </div>
+          </div>
         </div>
-        <div className="container" style={{ backgroundColor: "#fff" }}>
-          <div className="header__title text-center" />
-          <Home />
+        <div className="card__wrapper">
+          <div className="container">
+            <div className="row justify-content-center">
+              <div className="col-6">
+                <FlippeCard />
+              </div>
+            </div>
+          </div>
         </div>
       </>
     );

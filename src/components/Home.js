@@ -1,8 +1,6 @@
 import React, { Component } from "react";
 // import PropTypes from "prop-types";
 
-import FlippeCard from "./FlippeCard";
-
 class Home extends Component {
   //   static propTypes = {};
 
@@ -14,10 +12,8 @@ class Home extends Component {
     return (
       <section
         className="row justify-content-md-center"
-        style={{ backgroundColor: "#272b30" }}
-      >
-        <FlippeCard />
-      </section>
+        style={{ position: "relative" }}
+      />
     );
   }
 }
