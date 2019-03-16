@@ -29,8 +29,8 @@ p {
 .row {
   height: 22vh; }
 
-.card__wrapper .col {
-  width: 100%; }
+.container {
+  max-width: 540px; }
 
 .header__container__row__col {
   text-align: center; }
@@ -46,9 +46,7 @@ section {
   h1 {
     font-size: 9rem; }
   p {
-    font-size: 1.8rem; }
-  .container {
-    width: 540px; } }
+    font-size: 1.8rem; } }
 
 @media (max-width: 576px) {
   h1 {

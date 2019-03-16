@@ -38,20 +38,8 @@ p {
   height: 22vh;
 }
 
-.card__wrapper {
-  & .col {
-    // max-width: 50%;
-    width: 100%;
-  }
-
-  // @media (min-width: 550px) {
-  //   h1 {
-  //     font-size: 7rem;
-  //   }
-  //   p {
-  //     font-size: 1.4rem;
-  //   }
-  // }
+.container {
+  max-width: 540px;
 }
 
 .header__container__row__col {
@@ -74,10 +62,6 @@ section {
   }
   p {
     font-size: 1.8rem;
-  }
-
-  .container {
-    width: 540px;
   }
 }
 
