@@ -23,7 +23,7 @@ class App extends Component {
         <div className="card__wrapper">
           <div className="container">
             <div className="row justify-content-center">
-              <div className="col-6">
+              <div className="col">
                 <FlippeCard />
               </div>
             </div>

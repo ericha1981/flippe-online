@@ -34,7 +34,7 @@ class FlippeCard extends Component {
       <div className="card" onMouseEnter={this.cardMouseEnterHandler}>
         <div className="card__side card__side--front" />
         <div className="card__side card__side--back">
-          <div className="row card__text align-items-center">
+          <div className="row card__text">
             <div className="col text-center">{qTxt}</div>
           </div>
         </div>

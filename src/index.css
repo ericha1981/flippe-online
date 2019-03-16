@@ -29,10 +29,8 @@ p {
 .row {
   height: 22vh; }
 
-.card__wrapper > .container {
-  height: 68vh;
-  padding-top: 0;
-  margin-top: 0; }
+.card__wrapper .col {
+  width: 100%; }
 
 .header__container__row__col {
   text-align: center; }
@@ -44,13 +42,15 @@ p {
 section {
   margin-top: 7rem; }
 
-@media (min-width: 550px) {
+@media (min-width: 576px) {
   h1 {
     font-size: 9rem; }
   p {
-    font-size: 1.8rem; } }
+    font-size: 1.8rem; }
+  .container {
+    width: 540px; } }
 
-@media (max-width: 550px) {
+@media (max-width: 576px) {
   h1 {
     font-size: 7rem; }
   p {
@@ -67,8 +67,9 @@ section {
     color: #fff3f0;
     font-size: 2.5rem;
     border: 1.3rem solid #0c0d0e;
+    margin-top: 12px;
     height: 85rem;
-    max-height: 68vh;
+    max-height: 60vh;
     transition: all 0.8s ease;
     position: absolute;
     top: 0;
@@ -89,7 +90,15 @@ section {
       border-radius: 10px;
       background-color: #58493b; }
       .card__side--back .row {
-        height: 60vh; }
+        height: 100%; }
+  .card__text {
+    height: 30px; }
+  @media (min-width: 550px) {
+    .card__side {
+      font-size: 2.5rem; } }
+  @media (max-width: 550px) {
+    .card__side {
+      font-size: 2rem; } }
   .card:active .card__side--front,
   .card:focus .card__side--front,
   .card:hover .card__side--front {

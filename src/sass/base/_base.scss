@@ -38,12 +38,20 @@ p {
   height: 22vh;
 }
 
-.card__wrapper > .container {
-  height: 68vh;
-  padding-top: 0;
-  margin-top: 0;
+.card__wrapper {
+  & .col {
+    // max-width: 50%;
+    width: 100%;
+  }
 
-  // background-color: #272b30;
+  // @media (min-width: 550px) {
+  //   h1 {
+  //     font-size: 7rem;
+  //   }
+  //   p {
+  //     font-size: 1.4rem;
+  //   }
+  // }
 }
 
 .header__container__row__col {
@@ -59,16 +67,21 @@ section {
   margin-top: 7rem;
 }
 
-@media (min-width: 550px) {
+// Application name and title font responsive handling
+@media (min-width: 576px) {
   h1 {
     font-size: 9rem;
   }
   p {
     font-size: 1.8rem;
   }
+
+  .container {
+    width: 540px;
+  }
 }
 
-@media (max-width: 550px) {
+@media (max-width: 576px) {
   h1 {
     font-size: 7rem;
   }
