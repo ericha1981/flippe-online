@@ -61,6 +61,7 @@ section {
   -moz-perspective: 1500rem;
   position: relative;
   height: 68vh;
+  cursor: pointer;
   background-color: #272b30;
   border: 0; }
   .card__side {
@@ -99,11 +100,7 @@ section {
   @media (max-width: 550px) {
     .card__side {
       font-size: 2rem; } }
-  .card:active .card__side--front,
-  .card:focus .card__side--front,
   .card:hover .card__side--front {
     transform: rotateY(180deg); }
-  .card:active .card__side--back,
-  .card:focus .card__side--back,
   .card:hover .card__side--back {
     transform: rotateY(0); }

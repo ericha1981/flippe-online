@@ -3,6 +3,7 @@
   -moz-perspective: 1500rem;
   position: relative;
   height: 68vh;
+  cursor: pointer;
 
   background-color: #272b30;
   border: 0;
@@ -64,14 +65,10 @@
     }
   }
 
-  &:active &__side--front,
-  &:focus &__side--front,
   &:hover &__side--front {
     transform: rotateY(180deg);
   }
 
-  &:active &__side--back,
-  &:focus &__side--back,
   &:hover &__side--back {
     transform: rotateY(0);
   }

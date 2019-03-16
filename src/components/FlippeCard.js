@@ -31,7 +31,11 @@ class FlippeCard extends Component {
     const qTxt = questions[rndNum];
 
     return (
-      <div className="card" onMouseEnter={this.cardMouseEnterHandler}>
+      <div
+        className="card"
+        onMouseEnter={this.cardMouseEnterHandler}
+        onClick=""
+      >
         <div className="card__side card__side--front" />
         <div className="card__side card__side--back">
           <div className="row card__text">
